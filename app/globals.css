@@ -3,25 +3,55 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --primary-black-color: #1e293b;
+  --yellow-color: #f7ea68;
+  --gradian-color-1: #d2d9da;
+  --gradian-color-2: #fbe9e9;
+  --gradian-color-3: #d7ddd8;
+  --gradian-color-4: #F1E6BE;
+  --gray-color: #F6F9FC;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+@font-face {
+  font-family: CAUSTEN;
+  src: url("../public/fonts/Causten-Regular.otf");
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
+  font-family: CAUSTEN !important;
+}
+
+.container {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.gradient-color {
   background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    to bottom right,
+    var(--gradian-color-1),
+    var(--gradian-color-2),
+    var(--gradian-color-2),
+    var(--gradian-color-4),
+    var(--gradian-color-3)
+  );
+}
+
+.gradient-navbar {
+  background: linear-gradient(
+    to right,
+    var(--gradian-color-1),
+    var(--gradian-color-2),
+    var(--gradian-color-2)
+  );
+}
+
+.gray-background{
+  background-color: var(--gray-color);
+}
+
+
+.bg-payment{
+  background-color: var(--yellow-color);
 }
