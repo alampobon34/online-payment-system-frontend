@@ -2,11 +2,13 @@ import Hero from "@/components/Hero";
 import ServiceCard from "@/components/ServiceCard";
 import ServiceContainer from "@/components/ServiceContainer";
 import Image from "next/image";
-import { SERVICES, PAYMENTS, GETSTARTED } from "../data";
+import { SERVICES, PAYMENTS, GETSTARTED, INTEGRATION } from "../data";
 import Title from "@/components/Title";
 import PaymentCard from "@/components/PaymentCard";
 import Button from "@/components/Button";
 import Card from "@/components/Card";
+import IntegrationCard from "@/components/IntegrationCard";
+import InternetBusinessCard from "@/components/InternetBusinessCard";
 export default function Home() {
   return (
     <main>
@@ -52,9 +54,66 @@ export default function Home() {
             </p>
           </div>
           <div className="w-1/2">
-            <div className="flex justify-end items-center">
-              <Image className="w-80 h-80" src="/images/card.png" height={200} width={200} alt=""/>
+            <div className="flex flex-col justify-end items-center">
+              {/* <Image className="w-80 h-80" src="/images/card.png" height={200} width={200} alt=""/> */}
+              <div className="flex gap-4">
+                <IntegrationCard
+                  title={INTEGRATION[0].title}
+                  subtitle={INTEGRATION[0].subtitle}
+                  image={INTEGRATION[0].image}
+                />
+                <IntegrationCard
+                  title={INTEGRATION[2].title}
+                  subtitle={INTEGRATION[2].subtitle}
+                  image={INTEGRATION[2].image}
+                  styles={{ zIndex: "10" }}
+                />
+              </div>
+              <div>
+                <IntegrationCard
+                  title={INTEGRATION[1].title}
+                  subtitle={INTEGRATION[1].subtitle}
+                  image={INTEGRATION[1].image}
+                  styles={{ marginTop: "-25px" }}
+                />
+              </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* integration part end  */}
+
+      {/* internet business start  */}
+
+      <section>
+        <div className="container flex justify-center items-center">
+          <div className="w-3/4 flex flex-col gap-3">
+            <div className="w-3/4">
+              <Title title="The foundation of internet business." />
+            </div>
+
+            <div className="w-3/4">
+              <p className="text-sm">
+                Online invoice payment helps companies save time, are faster and
+                save maximum effort for the clients. it also helps in reducing
+                the excessive physically transaction
+              </p>
+            </div>
+
+            <div className="w-1/2">
+              <InternetBusinessCard />
+            </div>
+          </div>
+          <div>
+            <Image
+              className="w-full"
+              src="/icons/business.svg"
+              height={720}
+              width={720}
+              alt=""
+              objectFit="contain"
+            />
           </div>
         </div>
       </section>

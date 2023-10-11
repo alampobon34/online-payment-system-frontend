@@ -43,3 +43,21 @@ export const GETSTARTED = [
     image: "/icons/cloud.png",
   },
 ];
+
+export const INTEGRATION = [
+  {
+    title: "Add Card",
+    subtitle: "Add to card of any bank",
+    image: "/integrations/integration1.svg",
+  },
+  {
+    title: "Add To Wallet",
+    subtitle: "Add a card to your wallet",
+    image: "/integrations/integration2.svg",
+  },
+  {
+    title: "Add To App",
+    subtitle: "Add a card to your app",
+    image: "/integrations/integration3.svg",
+  },
+];
