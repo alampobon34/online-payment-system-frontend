@@ -2,17 +2,17 @@ export const SERVICES = [
   {
     title: "Instant Solution",
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim...",
-    image: "/icons/solution.png",
+    image: "/services/service1.svg",
   },
   {
     title: "Secured Payment System",
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim...",
-    image: "/icons/solution.png",
+    image: "/services/service2.svg",
   },
   {
     title: "Instant Customer Support",
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim...",
-    image: "/icons/solution.png",
+    image: "/services/service3.svg",
   },
 ];
 
@@ -35,12 +35,12 @@ export const GETSTARTED = [
   {
     title: "Cloud Storages",
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    image: "/icons/cloud.png",
+    image: "/get-started/cloud.svg",
   },
   {
     title: "Cloud Backup",
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    image: "/icons/cloud.png",
+    image: "/get-started/backup.svg",
   },
 ];
 
