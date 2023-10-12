@@ -125,7 +125,7 @@ export default function Home() {
           <div className="text-center">
             <Title title="Getting Secured Payment" />
           </div>
-          <div className="flex flex-col justify-around items-center md:flex-row">
+          <div className="flex flex-col justify-around items-center gap-6 md:gap-4 md:flex-row">
             {PAYMENTS.map((item, index) => (
               <>
                 <PaymentCard title={item.title} desc={item.desc} key={index} />
