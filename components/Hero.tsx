@@ -5,10 +5,10 @@ import Button from "./Button";
 const Hero = () => {
   return (
     <section className="gradient-color">
-      <div className="container flex justify-center items-center">
-        <div className="w-1/2 flex flex-col gap-3">
-          <div>
-            <h1 className="text-6xl font-extrabold text-primary-black-color">
+      <div className="container flex flex-col justify-center items-center md:flex-row">
+        <div className="w-full flex flex-col gap-3 md:w-1/2">
+          <div className="">
+            <h1 className="text-4xl font-extrabold text-primary-black-color md:text-5xl lg:text-6xl">
               The new gen <br /> payment <br /> system.
             </h1>
           </div>
@@ -29,7 +29,7 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div className="w-1/2">
+        <div className="w-full md:w-1/2">
           <Image
             className="w-full"
             src="/images/hero.png"

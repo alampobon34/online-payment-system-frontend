@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="gradient-navbar">
+        <div className="gradient-navbar relative">
           <Navbar />
         </div>
         {children}
