@@ -19,6 +19,7 @@
 
 body {
   font-family: CAUSTEN !important;
+  overflow-x: hidden;
 }
 
 .container {
@@ -55,6 +56,5 @@ body {
 .bg-payment{
   background-color: var(--yellow-color);
 }
-
 
 
