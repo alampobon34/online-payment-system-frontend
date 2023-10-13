@@ -29,8 +29,8 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div data-aos="fade-left" data-aos-duration="2000" className="w-full md:w-1/2">
-          <Image
+        <div data-aos-duration="2000" className="w-full md:w-1/2">
+          <Image data-aos="fade-left"
             className="w-full"
             src="/images/hero.png"
             width={200}
