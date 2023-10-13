@@ -134,8 +134,8 @@ export default function Home() {
 
       {/* payment section  */}
 
-      <section className="bg-payment">
-        <div className="container flex flex-col gap-4 py-10">
+      <section className="bg-payment overflow-x-hidden overflow-y-hidden">
+        <div data-aos="zoom-out-up" className="container flex flex-col gap-4 py-10">
           <div className="text-center">
             <Title title="Getting Secured Payment" />
           </div>
