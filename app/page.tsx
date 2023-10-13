@@ -25,7 +25,7 @@ export default function Home() {
     <main>
       <Hero />
       <section className="bg-primary-black-color">
-        <div className="container">
+        <div className="container" data-aos="fade-up">
           <div className="flex flex-col justify-between items-center gap-4 py-10 md:flex-row">
             {SERVICES.map((item, index) => (
               <>
