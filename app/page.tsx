@@ -24,8 +24,8 @@ export default function Home() {
   return (
     <main>
       <Hero />
-      <section className="bg-primary-black-color">
-        <div className="container overflow-x-hidden" data-aos="fade-up">
+      <section className="bg-primary-black-color overflow-x-hidden">
+        <div className="container" data-aos="fade-up">
           <div className="flex flex-col justify-between items-center gap-4 py-10 md:flex-row">
             {SERVICES.map((item, index) => (
               <>
@@ -65,7 +65,7 @@ export default function Home() {
             </p>
           </div>
           <div className="w-full md:w-1/2 py-10">
-            <div className="flex flex-col justify-end items-center">
+            <div className="flex flex-col justify-end items-center overflow-x-hidden">
               {/* <Image className="w-80 h-80" src="/images/card.png" height={200} width={200} alt=""/> */}
               <div className="flex gap-4">
                 <IntegrationCard
