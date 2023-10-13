@@ -11,7 +11,7 @@ interface IntegrationCardProps {
 
 const IntegrationCard = ({ title, subtitle, image, styles,aos }: IntegrationCardProps) => {
   return (
-    <div data-aos={aos} style={styles} className="w-32 h-32 md:w-48 md:h-48 bg-white border rounded-3xl flex flex-col justify-center items-center gap-2 p-2 shadow-md">
+    <div data-aos={aos} style={styles} className="w-32 h-32 md:w-48 md:h-48 bg-white border rounded-3xl flex flex-col justify-center items-center gap-2 p-2 shadow-md overflow-x-hidden overflow-y-hidden">
       <div>
         <Image className="w-8 h-8 md:w-14 md:h-14" src={image} height={60} width={60} alt="" />
       </div>
