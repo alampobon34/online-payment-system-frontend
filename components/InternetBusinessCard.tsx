@@ -3,7 +3,7 @@ import React from "react";
 
 const InternetBusinessCard = () => {
   return (
-    <div className="w-72 md:w-96 h-40 md:h-40 bg-[url('/icons/div-border.svg')] bg-contain bg-center bg-no-repeat relative text-primary-black-color">
+    <div data-aos="flip-up" className="w-72 md:w-96 h-40 md:h-40 bg-[url('/icons/div-border.svg')] bg-contain bg-center bg-no-repeat relative text-primary-black-color overflow-x-hidden overflow-y-hidden">
       <div className="w-10 h-10 rounded-full bg-black flex justify-center items-center absolute top-10 left-3">
         <Image src="/icons/avater.png" height={20} width={20} alt="" />
       </div>
