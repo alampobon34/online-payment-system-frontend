@@ -72,12 +72,14 @@ export default function Home() {
                   title={INTEGRATION[0].title}
                   subtitle={INTEGRATION[0].subtitle}
                   image={INTEGRATION[0].image}
+                  aos='fade-right'
                 />
                 <IntegrationCard
                   title={INTEGRATION[2].title}
                   subtitle={INTEGRATION[2].subtitle}
                   image={INTEGRATION[2].image}
                   styles={{ zIndex: "10" }}
+                  aos='fade-left'
                 />
               </div>
               <div>
@@ -86,6 +88,7 @@ export default function Home() {
                   subtitle={INTEGRATION[1].subtitle}
                   image={INTEGRATION[1].image}
                   styles={{ marginTop: "-25px" }}
+                  aos='fade-up'
                 />
               </div>
             </div>
