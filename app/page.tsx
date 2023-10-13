@@ -119,8 +119,8 @@ export default function Home() {
               <InternetBusinessCard />
             </div>
           </div>
-          <div className="w-full">
-            <Image
+          <div className="w-full overflow-x-hidden overflow-y-hidden">
+            <Image data-aos="zoom-in"
               className="w-80 h-80 md:w-full md:h-full"
               src="/icons/business.svg"
               height={200}
