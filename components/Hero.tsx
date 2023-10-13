@@ -29,7 +29,7 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div className="w-full md:w-1/2">
+        <div data-aos="fade-left" data-aos-duration="2000" className="w-full md:w-1/2">
           <Image
             className="w-full"
             src="/images/hero.png"

@@ -1,3 +1,7 @@
+"use client"
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import Hero from "@/components/Hero";
 import ServiceCard from "@/components/ServiceCard";
 import ServiceContainer from "@/components/ServiceContainer";
@@ -9,12 +13,19 @@ import Button from "@/components/Button";
 import Card from "@/components/Card";
 import IntegrationCard from "@/components/IntegrationCard";
 import InternetBusinessCard from "@/components/InternetBusinessCard";
+
 export default function Home() {
+  useEffect(() => {
+    AOS.init({
+         duration: 800,
+         once: false,
+       })
+ }, [])
   return (
     <main>
       <Hero />
       <section className="bg-primary-black-color">
-        <div className="container">
+        <div data-aos="fade-up" data-aos-duration="2000" className="container">
           <div className="flex flex-col justify-between items-center gap-4 py-10 md:flex-row">
             {SERVICES.map((item, index) => (
               <>
@@ -61,12 +72,14 @@ export default function Home() {
                   title={INTEGRATION[0].title}
                   subtitle={INTEGRATION[0].subtitle}
                   image={INTEGRATION[0].image}
+                  aos='fade-right'
                 />
                 <IntegrationCard
                   title={INTEGRATION[2].title}
                   subtitle={INTEGRATION[2].subtitle}
                   image={INTEGRATION[2].image}
                   styles={{ zIndex: "10" }}
+                  aos='fade-left'
                 />
               </div>
               <div>
@@ -75,6 +88,7 @@ export default function Home() {
                   subtitle={INTEGRATION[1].subtitle}
                   image={INTEGRATION[1].image}
                   styles={{ marginTop: "-25px" }}
+                  aos='fade-up'
                 />
               </div>
             </div>
@@ -101,11 +115,11 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="w-full md:w-1/2">
+            <div data-aos="flip-down" data-aos-duration="3000" className="w-full md:w-1/2">
               <InternetBusinessCard />
             </div>
           </div>
-          <div className="w-full">
+          <div data-aos="zoom-in" className="w-full">
             <Image
               className="w-80 h-80 md:w-full md:h-full"
               src="/icons/business.svg"
@@ -128,7 +142,7 @@ export default function Home() {
           <div className="flex flex-col justify-around items-center gap-6 md:gap-4 md:flex-row">
             {PAYMENTS.map((item, index) => (
               <>
-                <PaymentCard title={item.title} desc={item.desc} key={index} />
+                <PaymentCard title={item.title} desc={item.desc} key={index} aos='fade-left' />
                 {index < PAYMENTS.length - 1 ? (
                   <div className="hidden md:block h-[50px] min-h-[1em] w-px my-auto self-stretch bg-gradient-to-tr from-transparent to-black opacity-20 dark:opacity-100"></div>
                 ) : (
@@ -167,6 +181,7 @@ export default function Home() {
                 desc={item.desc}
                 image={item.image}
                 key={index}
+                aos={index===0 ? 'fade-down' : 'fade-up' }
               />
             ))}
           </div>
