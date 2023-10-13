@@ -19,7 +19,7 @@
 
 body {
   font-family: CAUSTEN !important;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 
 .container {
