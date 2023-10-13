@@ -174,13 +174,14 @@ export default function Home() {
               />
             </div>
           </div>
-          <div className="w-full md:w-2/3 flex flex-col gap-4 justify-around py-5 md:flex-row">
+          <div className="overflow-x-hidden overflow-y-hidden w-full md:w-2/3 flex flex-col gap-4 justify-around py-5 md:flex-row">
             {GETSTARTED.map((item, index) => (
               <Card
                 title={item.title}
                 desc={item.desc}
                 image={item.image}
                 key={index}
+                aos={index===0 ? 'fade-down' : 'fade-up'}
               
               />
             ))}
