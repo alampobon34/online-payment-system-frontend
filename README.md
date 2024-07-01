@@ -3,6 +3,10 @@
 
 A Landing page that builds with versatile technology like Next JS and Tailwind. AOS is the key to fancy animation. Responsive for mobile and others devices as handled in this project.
 
+**Major Features-**
+1. Responsive
+
+   
 **Technology Used-**
 1. Next JS
 2. TypeScript
